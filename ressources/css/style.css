@@ -1,0 +1,295 @@
+body{
+    background-color: #FFFFFF;
+    background-image: url("http://www.transparenttextures.com/patterns/dotnoise-light-grey.png");
+}
+
+.content{
+	padding-left:10px;
+}
+
+.loader {
+    width: 100%;
+    height: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+div.mdl-spinner {
+	width: 50px;
+	height: 50px;
+}
+@media screen and (max-device-width: 605px) and (orientation: portrait){
+	div.mdl-spinner {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+div.centre {
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	width: 200px;
+	height: 200px;
+	margin-left: -30px;
+	margin-top: -30px;
+}
+
+.menu{
+    height: 55px;
+    background-color: #2196F3;
+    position: absolute;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.17);
+    top: 0;
+    left: 0;
+    width: 100%;
+	z-index: 99;
+	display: -webkit-box;
+}
+
+.menu div.first {
+    width: auto;
+    position: relative;
+    text-align: center;
+    background-color: white !important;
+    height: 55px;
+    border: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 11px 19px 13px;
+    margin-left: 37px;
+	color:#2196F3 !important;;
+}
+.menu div.first .fa {
+    margin-top: 7px;
+	font-size: 55px;
+}
+
+.menu div {
+	cursor:pointer;
+    float: left;
+    height: auto;
+    border-right: 1px solid #d3d3d3;
+	font-weight:bold;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFF !important;
+	padding: 15px 25px 12px 25px;
+	line-height: initial; 
+	border-radius:0;
+	background-color: #2196F3 !important;
+	text-transform: initial;
+}
+@media screen and (max-width: 1120px) {
+	.menu div {
+		padding: 15px 15px 12px 15px;
+
+	}
+}
+
+.menu div:hover{
+    background-color: #2196F3;
+    color: #FFF;
+}
+.menu div:active {
+    background-color: #2196F3;
+    color: #FFF;
+}
+
+.menu div .fa{
+	font-size: 27px;
+}
+.menu div span{
+	font-size: 17px;
+	vertical-align: text-bottom;
+	padding-left: 9px;
+}
+.menu div span.name{
+	display:none;
+	white-space: nowrap;
+}
+.menu div.active span.name{
+	display:initial;
+}
+
+.menu div.mdl-button:not(.active) {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1120px) {
+	.menu div.mdl-button:not(.active) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.idcat{
+	display:none;
+}
+
+.spacer {
+	padding-top: 100px;
+}
+
+.mdl-card{
+    float: left;
+    margin: 10px;
+	margin-right:25px !important;
+    height: 360px;
+    overflow: initial;
+	white-space: normal;
+}
+
+.mdl-card.mdl-badge--overlap:after{
+	right: 16px;
+    top: 4%;
+    background: rgb(230, 126, 34);
+}
+
+.tagName {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: -9px;
+    background: #2196F3;
+    padding: 10px 20px 10px 16px;
+    color: white;
+    bottom: -4px;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.tagName:before {
+    content: attr(data-tagname);
+}
+
+.tagName:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 38.4px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid rgba(214, 0, 0, 0);
+    border-top: 9px solid #1C7CCA;
+}
+
+
+
+
+div.mdl-card--expand.mdl-card__title{
+    flex: initial;
+	height: 170px;
+	padding: 0px;
+	position: relative;
+}
+
+.mdl-card__title.mdl-card--border {
+    border-bottom: none;
+}
+
+.mdl-card__title-text{
+    color: #2196F3 !important;
+	padding: 10px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    color: aliceblue;
+}
+
+.mdl-button--raised {
+    box-shadow: none !important;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--fab, .mdl-button--accent.mdl-button--accent.mdl-button--raised {
+    color: rgb(255,255,255)!important;
+    background-color: rgb(33, 150, 243)!important;
+}
+.tagdiv {
+    padding-top: 0px;
+}
+.tag {
+    display: inline-block;
+    height: 10px;
+    position: relative;
+    content: "";
+    margin: 0 13px 0 0;
+    padding: 1px 10px 9px 7px;
+    border: 0 solid rgba(0,0,0,0);
+    -webkit-border-radius: 4px 1px 1px 4px;
+    border-radius: 4px 1px 1px 4px;
+    color: rgba(255,255,255,1);
+    font-size: 11px;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: #e67e22;
+}
+
+.tag:before {
+    display: inline-block;
+    z-index: -1;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    top: 3px;
+    right: -7px;
+    border: 0 solid #1abc9c;
+    -webkit-border-radius: 1px 1px 4px;
+    border-radius: 1px 1px 4px;
+    font: normal normal normal medium/normal Arial, Helvetica, sans-serif;
+    color: rgba(255,255,255,0.9);
+    background: #e67e22;
+    -moz-transform: rotateY(1deg) rotateZ(-45deg) scaleX(1) scaleY(1) scaleZ(1);
+    -webkit-transform: rotateY(1deg) rotateZ(-45deg) scaleX(1) scaleY(1) scaleZ(1);
+    transform: rotateY(1deg) rotateZ(-45deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+
+.tag:after {
+    display: inline-block;
+    z-index: 2;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    top: 7px;
+    right: 0px;
+    border: 0 solid #018dc4;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font: normal normal normal medium/normal Arial, Helvetica, sans-serif;
+    color: rgba(255,255,255,0.9);
+    background: #fcfcfc;
+}
+
+.mdl-card__actions.mdl-card--border {
+    flex: none;
+}
+
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 25px;
+  height: 25px;
+  width: 103px;
+  margin: 0 auto;
+  margin-right: 9px;
+  position: relative;
+  padding: 0;
+  float:right;
+}
+
+.star-ratings-css .star-ratings-css-top {
+    color: #E67E22;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display:block;
+    left: 0px;
+    overflow: hidden;
+}
+
+.star-ratings-css-bottom { z-index: 0; }
